@@ -1,3 +1,84 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+	min-width: 320px;
+
+	/* добавим отступ для navbar */
+	/* padding-top: 60px; */
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	padding: 50px 0;
+}
+
+a {
+	color: #111;
+}
+
+a:hover {
+	color: #555;
+}
+
+/******* Header *******/
+.navbar {
+	/* position: fixed; */
+	/* top: 0; */
+	/* width: 100%; */
+	/* z-index: 1000; Устанавливаем z-index, чтобы навигационная панель была поверх других элементов */
+
+	/* убираем прозрачность */
+	/* background-color: rgba(253, 239, 239, 0.8); Прозрачный белый цвет */
+	/* backdrop-filter: blur(10px); Применяем размытие заднего фона */
+}
+
+.navbar-nav {
+	color: #111;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.top-menu li a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #111;
+	height: 1px;
+	transition: all 0.3s;
+	transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+	transform: scale(1);
+}
+
+/* Уменьшаем жирность подчеркивания для ссылки "Ты можешь" */
+.top-menu li a.nav-link.dropdown-toggle.special::after {
+	height: 0.5px; /* Пример уменьшения толщины */
+	/* Другие стили, если необходимо */
+}
+
+/*** MODAL ****/
+.modal-body img {
+	max-width: 100px;
+}
+
 /* Добавляем анимацию для появления и исчезновения задач */
 @keyframes fadeIn {
 	from {
@@ -22,7 +103,7 @@
 }
 
 /* Применяем анимацию к задачам */
-li {
+.todo-container li {
 	margin-bottom: 10px;
 	padding: 10px;
 	border: 1px solid #ced4da; /* Цвет рамки */
@@ -31,12 +112,12 @@ li {
 	animation: fadeIn 0.5s ease forwards; /* Анимация появления */
 }
 
-li.fade-out {
+.todo-container li.fade-out {
 	animation: fadeOut 0.5s ease forwards; /* Анимация исчезновения */
 }
 
 /* ************** Матрица Эйзенхауэра ***********************  */
-.todo-container {
+/* .todo-container {
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -66,4 +147,4 @@ li.fade-out {
 
 .task-list li {
 	margin-bottom: 5px;
-}
+} */

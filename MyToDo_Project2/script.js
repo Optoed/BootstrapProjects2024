@@ -125,7 +125,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		const categoryText = categoryInput.value.trim()
 		const dateTimeInput = document.getElementById('dateTimeInput')
 		const dateTimeText = dateTimeInput.value
-		if (taskText !== '' && categoryText !== '' && dateTimeText !== '') {
+		//добавь datetime !== '' если время - обязательное
+		if (taskText !== '' && categoryText !== '') {
 			addTask(taskText, categoryText, dateTimeText)
 			taskInput.value = ''
 			categoryInput.value = ''
