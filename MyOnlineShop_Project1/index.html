@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- название -->
+		<title>Одностраничное приложение</title>
+
+		<!-- подключение bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+
+		<!-- подключение google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- подключим css -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<!-- брэнд -->
+				<a class="navbar-brand" href="#">#КрутыеМужики</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Блок №1 -->
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<!-- слева список -->
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#"
+								>Домой</a
+							>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Каталог</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Ты можешь
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#"
+										>Отжаться 20 раз</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Подтянуться 10 раз</a
+									>
+								</li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Стать скуфом</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link disabled" aria-disabled="true">
+								Ещё не добавлено
+							</a>
+						</li>
+					</ul>
+
+					<!-- left top icons -->
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<!-- МОДАЛЬНЫЕ ОКНА ДЛЯ РЕГИСТРАЦИИ И АВТОРИЗАЦИИ -->
+						<!-- Модальное окно для регистрации/авторизации -->
+						<div
+							class="modal fade"
+							id="authModal"
+							tabindex="-1"
+							aria-labelledby="authModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5
+											class="modal-title"
+											id="authModalLabel"
+										>
+											Авторизация
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<!-- Форма для входа/регистрации -->
+										<form>
+											<div class="mb-3">
+												<label
+													for="username"
+													class="form-label"
+													>Логин</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="username"
+												/>
+											</div>
+											<div class="mb-3">
+												<label
+													for="password"
+													class="form-label"
+													>Пароль</label
+												>
+												<input
+													type="password"
+													class="form-control"
+													id="password"
+												/>
+											</div>
+											<button
+												type="submit"
+												class="btn btn-primary"
+											>
+												Войти
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Изменение ваши ссылки "Регистрация" и "Авторизация", чтобы они вызывали модальное окно: -->
+						<!-- left top icons -->
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									data-bs-toggle="dropdown"
+									href="#"
+								>
+									<i class="fa-regular fa-user"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											data-bs-toggle="modal"
+											data-bs-target="#authModal"
+											>Регистрация</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											data-bs-toggle="modal"
+											data-bs-target="#authModal"
+											>Авторизация</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<!-- Modal окно корзина-->
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#"
+								data-bs-toggle="modal"
+								data-bs-target="#modal-cart"
+								><i class="fa-solid fa-cart-arrow-down"></i
+							></a>
+
+							<!-- modal у корзины -->
+							<div
+								class="modal fade"
+								id="modal-cart"
+								data-bs-backdrop="static"
+								data-bs-keyboard="false"
+								tabindex="-1"
+								aria-labelledby="staticBackdropLabel"
+								aria-hidden="true"
+							>
+								<!-- modal-xl убери и станет меньше -->
+								<div class="modal-dialog modal-xl">
+									<div class="modal-content">
+										<!-- смотри задний фон в background на bootstrap -->
+										<div
+											class="modal-header bg-warning text-black"
+										>
+											<!-- заголовок окна modal -->
+											<h1
+												class="modal-title fs-5"
+												id="staticBackdropLabel"
+											>
+												Корзина
+											</h1>
+
+											<!-- кнопка закрытия -->
+											<button
+												type="button"
+												class="btn-close"
+												data-bs-dismiss="modal"
+												aria-label="Close"
+											></button>
+										</div>
+
+										<!-- текст внутри modal -->
+										<div class="modal-body">
+											<!-- таблица table -->
+											<table class="table">
+												<!-- голова таблицы -->
+												<thead>
+													<tr>
+														<th scope="col">№</th>
+														<th scope="col">
+															Продавец
+														</th>
+														<th scope="col">
+															Товар
+														</th>
+														<th scope="col">
+															Цена
+														</th>
+														<th scope="col">
+															Изображения
+														</th>
+													</tr>
+												</thead>
+												<!-- тело таблицы -->
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>
+															<a href="#"
+																>laptop</a
+															>
+														</td>
+														<td>$35.99</td>
+														<td>
+															<img
+																src="img/products/laptop1.jpg"
+																alt=""
+															/>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Вова</td>
+														<td>
+															<a href="#"
+																>laptop</a
+															>
+														</td>
+														<td>$25.99</td>
+														<td>
+															<img
+																src="img/products/laptop1.jpg"
+																alt=""
+															/>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Скуф</td>
+														<td>
+															<a href="#"
+																>laptop</a
+															>
+														</td>
+														<td>$325.99</td>
+														<td>
+															<img
+																src="img/products/laptop1.jpg"
+																alt=""
+															/>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<!-- кнопки ниже закрыть и принять -->
+										<div class="modal-footer">
+											<button
+												type="button"
+												class="btn btn-danger"
+												data-bs-dismiss="modal"
+											>
+												Очистить корзину
+											</button>
+											<button
+												type="button"
+												class="btn btn-success"
+											>
+												Оплатить покупку
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<!-- Поиск search справа -->
+					<form class="d-flex" role="search">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-success" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Карусель (слайды) -->
+		<div class="container-fluid my-carousel">
+			<div
+				id="carouselExampleIndicators"
+				class="carousel slide carousel-fade"
+				data-bs-ride="carousel"
+				data-bs-interval="5000"
+			>
+				<!-- индикаторы карусели -->
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<!-- фотки карусели -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="img/IgorVoitenko/1.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="img/IgorVoitenko/2.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="img/IgorVoitenko/3.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+					</div>
+					<!-- <div class="carousel-item">
+					<img
+						src="img/IgorVoitenko/4.jpg"
+						class="d-block w-100"
+						alt="..."
+					/>
+				</div> -->
+				</div>
+				<!-- кнопка "предыдущий" -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev"
+				>
+					<span
+						class="carousel-control-prev-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<!-- кнопка "следующий" -->
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next"
+				>
+					<span
+						class="carousel-control-next-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		<!-- главный контент -->
+		<section class="main-content">
+			<!-- Товары (карточки товаров) -->
+			<div class="container">
+				<div class="row">
+					<!-- bootstrap использует 12-колоночную сетку, поэтому lg-4 означает поделить на 4 и теперь у нас будет 4 части из 12-колоночной сетки (то есть 1/3) то есть 3 штуки в ряд-->
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb">
+								<a href="#"
+									><img src="img/products/laptop1.jpg" alt=""
+								/></a>
+							</div>
+
+							<div class="product-details">
+								<h4><a href="#">Ноутбук1</a></h4>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Soluta, unde?
+								</p>
+
+								<div
+									class="product-bottom-details d-flex justify-content-between"
+								>
+									<div class="product-price">
+										<small>$230.99</small> $99
+									</div>
+
+									<div class="product-links">
+										<button class="add-to-cart-btn">
+											<i
+												class="fa-solid fa-cart-arrow-down"
+												data-product-id="1"
+											></i>
+										</button>
+
+										<a href="#"
+											><i
+												class="fa-sharp fa-solid fa-heart"
+												style="color: #db3d5d"
+											></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb">
+								<a href="#"
+									><img src="img/products/laptop1.jpg" alt=""
+								/></a>
+							</div>
+
+							<div class="product-details">
+								<h4><a href="#">Ноутбук1</a></h4>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Soluta, unde?
+								</p>
+
+								<div
+									class="product-bottom-details d-flex justify-content-between"
+								>
+									<div class="product-price">
+										<small>$230.99</small> $99
+									</div>
+
+									<div class="product-links">
+										<button class="add-to-cart-btn">
+											<i
+												class="fa-solid fa-cart-arrow-down"
+												data-product-id="2"
+											></i>
+										</button>
+										<a href="#"
+											><i
+												class="fa-sharp fa-solid fa-heart"
+												style="color: #db3d5d"
+											></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb">
+								<a href="#"
+									><img src="img/products/laptop1.jpg" alt=""
+								/></a>
+							</div>
+
+							<div class="product-details">
+								<h4><a href="#">Ноутбук1</a></h4>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Soluta, unde?
+								</p>
+
+								<div
+									class="product-bottom-details d-flex justify-content-between"
+								>
+									<div class="product-price">
+										<small>$230.99</small> $99
+									</div>
+
+									<div class="product-links">
+										<button class="add-to-cart-btn">
+											<i
+												class="fa-solid fa-cart-arrow-down"
+												data-product-id="3"
+											></i>
+										</button>
+										<a href="#"
+											><i
+												class="fa-sharp fa-solid fa-heart"
+												style="color: #db3d5d"
+											></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb">
+								<a href="#"
+									><img src="img/products/laptop1.jpg" alt=""
+								/></a>
+							</div>
+
+							<div class="product-details">
+								<h4><a href="#">Ноутбук1</a></h4>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Soluta, unde?
+								</p>
+
+								<div
+									class="product-bottom-details d-flex justify-content-between"
+								>
+									<div class="product-price">
+										<small>$230.99</small> $99
+									</div>
+
+									<div class="product-links">
+										<button class="add-to-cart-btn">
+											<i
+												class="fa-solid fa-cart-arrow-down"
+												data-product-id="4"
+											></i>
+										</button>
+										<a href="#"
+											><i
+												class="fa-sharp fa-solid fa-heart"
+												style="color: #db3d5d"
+											></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb">
+								<a href="#"
+									><img src="img/products/laptop1.jpg" alt=""
+								/></a>
+							</div>
+
+							<div class="product-details">
+								<h4><a href="#">Ноутбук1</a></h4>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Soluta, unde?
+								</p>
+
+								<div
+									class="product-bottom-details d-flex justify-content-between"
+								>
+									<div class="product-price">
+										<small>$230.99</small> $99
+									</div>
+
+									<div class="product-links">
+										<button class="add-to-cart-btn">
+											<i
+												class="fa-solid fa-cart-arrow-down"
+												data-product-id="5"
+											></i>
+										</button>
+										<a href="#"
+											><i
+												class="fa-sharp fa-solid fa-heart"
+												style="color: #db3d5d"
+											></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb">
+								<a href="#"
+									><img src="img/products/laptop1.jpg" alt=""
+								/></a>
+							</div>
+
+							<div class="product-details">
+								<h4><a href="#">Ноутбук1</a></h4>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Soluta, unde?
+								</p>
+
+								<div
+									class="product-bottom-details d-flex justify-content-between"
+								>
+									<div class="product-price">
+										<small>$230.99</small> $99
+									</div>
+
+									<div class="product-links">
+										<button class="add-to-cart-btn">
+											<i
+												class="fa-solid fa-cart-arrow-down"
+												data-product-id="6"
+											></i>
+										</button>
+										<a href="#"
+											><i
+												class="fa-sharp fa-solid fa-heart"
+												style="color: #db3d5d"
+											></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JavaScript код для обработки нажатия на кнопку "добавить в корзину" -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const addToCartButtons =
+					document.querySelectorAll('.add-to-cart-btn')
+
+				addToCartButtons.forEach(button => {
+					button.addEventListener('click', function () {
+						// Получаем информацию о товаре, который нужно добавить в корзину
+						const product = this.parentNode
+						const productName =
+							product.querySelector('h3').innerText
+						const productPrice = 'Цена' // Здесь нужно указать цену товара
+
+						// Создаем HTML элемент для добавления в таблицу корзины
+						const newRow = document.createElement('tr')
+						newRow.innerHTML = `
+                    <td>№</td>
+                    <td>Продавец</td>
+                    <td>${productName}</td>
+                    <td>${productPrice}</td>
+                    <td>Изображение</td>
+                `
+
+						// Добавляем новую строку в таблицу корзины
+						const cartTableBody = document.querySelector(
+							'.modal-body table tbody'
+						)
+						cartTableBody.appendChild(newRow)
+					})
+				})
+			})
+		</script>
+
+		<!-- FOOTER -->
+		<footer>
+			<section class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-6">
+							<h4>Информация</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О магазине</a></li>
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-6">
+							<h4>Время работы</h4>
+							<ul class="list-unstyled">
+								<li>Саратов, ул. Скуфа</li>
+								<li>пн-вс: 9:00 - 19:00</li>
+								<li>без перерыва</li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-6">
+							<h4>Контакты</h4>
+							<ul class="list-unstyled">
+								<li>
+									<a href="tel:+79432532125"
+										>+7 943 253-21-25</a
+									>
+								</li>
+								<li>
+									<a href="tel:+79432232125"
+										>+7 925 253-26-15</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-3 col-6">
+							<h4>Мы в сети:</h4>
+							<div class="footer-icons">
+								<a href="#"><i class="fa-brands fa-vk"></i></a>
+								<a href="#"
+									><i
+										class="fa-brands fa-telegram"
+										style="color: #74c0fc"
+									></i
+								></a>
+								<a href="#"
+									><i
+										class="fa-brands fa-youtube"
+										style="color: #e3301c"
+									></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+		<!-- Скрипты -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://kit.fontawesome.com/ec796c5424.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

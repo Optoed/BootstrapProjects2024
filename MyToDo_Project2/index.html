@@ -1,0 +1,113 @@
+<!-- MyToDo_Project2 -->
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+
+		<!-- подключение google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- подключим css -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- BODY  -->
+	<body>
+		<!-- №1 Навигационная панель -->
+		<div class="todo-container">
+			<h1>Become OverMan</h1>
+			<input type="text" id="taskInput" placeholder="Введите задачу..." />
+			<input
+				type="text"
+				id="categoryInput"
+				placeholder="Введите категорию..."
+			/>
+			<!-- Добавляем поле для даты и времени -->
+			<input type="datetime-local" id="dateTimeInput" />
+			<button id="addTaskBtn">Добавить задачу</button>
+			<ul id="taskList"></ul>
+
+			<!-- Добавляем список выполненных задач -->
+			<h2>Выполненные задачи</h2>
+			<ul id="completedTaskList"></ul>
+
+			<!-- Матрица Эйзенхауэра -->
+			<h2>Do (Важные и срочные)</h2>
+			<ul id="importantUrgentTasks" class="task-list"></ul>
+			<h2>Decide (Важные, но не срочные)</h2>
+			<ul id="importantNotUrgentTasks" class="task-list"></ul>
+			<h2>Delegate (Срочные, но не важные)</h2>
+			<ul id="notImportantUrgentTasks" class="task-list"></ul>
+			<h2>Delete (Не важные и не срочные)</h2>
+			<ul id="notImportantNotUrgentTasks" class="task-list"></ul>
+		</div>
+
+		<!--
+		Матрица Эйзенхауэра
+		<div class="todo-container">
+			<h1>Матрица Эйзенхауэра TODO List</h1>
+			<input type="text" id="taskInput" placeholder="Введите задачу..." />
+			<input type="datetime-local" id="dateTimeInput" />
+			
+			<button id="addTaskBtn">Добавить задачу</button>
+			<div class="eisenhower-matrix">
+				<div class="row">
+					<div class="cell important-urgent">
+						<h2>Важные и срочные</h2>
+						<ul id="importantUrgentTasks" class="task-list"></ul>
+					</div>
+					<div class="cell important-not-urgent">
+						<h2>Важные, но не срочные</h2>
+						<ul id="importantNotUrgentTasks" class="task-list"></ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell not-important-urgent">
+						<h2>Срочные, но не важные</h2>
+						<ul id="notImportantUrgentTasks" class="task-list"></ul>
+					</div>
+					<div class="cell not-important-not-urgent">
+						<h2>Не важные и не срочные</h2>
+						<ul
+							id="notImportantNotUrgentTasks"
+							class="task-list"
+						></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<!-- SCRIPTS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+		<!-- Подключаем внешний JavaScript файл -->
+		<script src="script.js"></script>
+	</body>
+</html>
