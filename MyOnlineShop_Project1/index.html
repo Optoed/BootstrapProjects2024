@@ -8,20 +8,12 @@
 		<title>Одностраничное приложение</title>
 
 		<!-- подключение bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
 		<!-- подключение google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
 		<!-- подключим css -->
 		<link rel="stylesheet" href="style.css" />
@@ -34,29 +26,16 @@
 				<!-- брэнд -->
 				<a class="navbar-brand" href="#">#КрутыеМужики</a>
 
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<!-- Блок №1 -->
-				<div
-					class="collapse navbar-collapse"
-					id="navbarSupportedContent"
-				>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<!-- слева список -->
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#"
-								>Домой</a
-							>
+							<a class="nav-link" aria-current="page" href="#">Домой</a>
 						</li>
 
 						<li class="nav-item">
@@ -64,41 +43,21 @@
 						</li>
 
 						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Ты можешь
-							</a>
+							<a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ты можешь </a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="#"
-										>Отжаться 20 раз</a
-									>
+									<a class="dropdown-item" href="#">Отжаться 20 раз</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="#"
-										>Подтянуться 10 раз</a
-									>
+									<a class="dropdown-item" href="#">Подтянуться 10 раз</a>
 								</li>
 								<li>
 									<hr class="dropdown-divider" />
 								</li>
 								<li>
-									<a class="dropdown-item" href="#"
-										>Стать скуфом</a
-									>
+									<a class="dropdown-item" href="#">Стать скуфом</a>
 								</li>
 							</ul>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link disabled" aria-disabled="true">
-								Ещё не добавлено
-							</a>
 						</li>
 					</ul>
 
@@ -106,62 +65,25 @@
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<!-- МОДАЛЬНЫЕ ОКНА ДЛЯ РЕГИСТРАЦИИ И АВТОРИЗАЦИИ -->
 						<!-- Модальное окно для регистрации/авторизации -->
-						<div
-							class="modal fade"
-							id="authModal"
-							tabindex="-1"
-							aria-labelledby="authModalLabel"
-							aria-hidden="true"
-						>
+						<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5
-											class="modal-title"
-											id="authModalLabel"
-										>
-											Авторизация
-										</h5>
-										<button
-											type="button"
-											class="btn-close"
-											data-bs-dismiss="modal"
-											aria-label="Close"
-										></button>
+										<h5 class="modal-title" id="authModalLabel">Авторизация</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
 										<!-- Форма для входа/регистрации -->
 										<form>
 											<div class="mb-3">
-												<label
-													for="username"
-													class="form-label"
-													>Логин</label
-												>
-												<input
-													type="text"
-													class="form-control"
-													id="username"
-												/>
+												<label for="username" class="form-label">Логин</label>
+												<input type="text" class="form-control" id="username" />
 											</div>
 											<div class="mb-3">
-												<label
-													for="password"
-													class="form-label"
-													>Пароль</label
-												>
-												<input
-													type="password"
-													class="form-control"
-													id="password"
-												/>
+												<label for="password" class="form-label">Пароль</label>
+												<input type="password" class="form-control" id="password" />
 											</div>
-											<button
-												type="submit"
-												class="btn btn-primary"
-											>
-												Войти
-											</button>
+											<button type="submit" class="btn btn-primary">Войти</button>
 										</form>
 									</div>
 								</div>
@@ -172,31 +94,15 @@
 						<!-- left top icons -->
 						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									data-bs-toggle="dropdown"
-									href="#"
-								>
+								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
 									<i class="fa-regular fa-user"></i>
 								</a>
 								<ul class="dropdown-menu">
 									<li>
-										<a
-											class="dropdown-item"
-											href="#"
-											data-bs-toggle="modal"
-											data-bs-target="#authModal"
-											>Регистрация</a
-										>
+										<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Регистрация</a>
 									</li>
 									<li>
-										<a
-											class="dropdown-item"
-											href="#"
-											data-bs-toggle="modal"
-											data-bs-target="#authModal"
-											>Авторизация</a
-										>
+										<a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Авторизация</a>
 									</li>
 								</ul>
 							</li>
@@ -204,68 +110,35 @@
 
 						<!-- Modal окно корзина-->
 						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="#"
-								data-bs-toggle="modal"
-								data-bs-target="#modal-cart"
-								><i class="fa-solid fa-cart-arrow-down"></i
-							></a>
+							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
 
 							<!-- modal у корзины -->
-							<div
-								class="modal fade"
-								id="modal-cart"
-								data-bs-backdrop="static"
-								data-bs-keyboard="false"
-								tabindex="-1"
-								aria-labelledby="staticBackdropLabel"
-								aria-hidden="true"
-							>
+							<div class="modal fade" id="modal-cart" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 								<!-- modal-xl убери и станет меньше -->
 								<div class="modal-dialog modal-xl">
 									<div class="modal-content">
 										<!-- смотри задний фон в background на bootstrap -->
-										<div
-											class="modal-header bg-warning text-black"
-										>
+										<div class="modal-header bg-warning text-black">
 											<!-- заголовок окна modal -->
-											<h1
-												class="modal-title fs-5"
-												id="staticBackdropLabel"
-											>
-												Корзина
-											</h1>
+											<h1 class="modal-title fs-5" id="staticBackdropLabel">Корзина</h1>
 
 											<!-- кнопка закрытия -->
-											<button
-												type="button"
-												class="btn-close"
-												data-bs-dismiss="modal"
-												aria-label="Close"
-											></button>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 										</div>
 
 										<!-- текст внутри modal -->
 										<div class="modal-body">
+											<p>Ваша корзина содержит <span id="cart-item-count">0</span> элементов.</p>
 											<!-- таблица table -->
 											<table class="table">
 												<!-- голова таблицы -->
 												<thead>
 													<tr>
 														<th scope="col">№</th>
-														<th scope="col">
-															Продавец
-														</th>
-														<th scope="col">
-															Товар
-														</th>
-														<th scope="col">
-															Цена
-														</th>
-														<th scope="col">
-															Изображения
-														</th>
+														<th scope="col">Продавец</th>
+														<th scope="col">Товар</th>
+														<th scope="col">Цена</th>
+														<th scope="col">Изображения</th>
 													</tr>
 												</thead>
 												<!-- тело таблицы -->
@@ -274,48 +147,22 @@
 														<th scope="row">1</th>
 														<td>Mark</td>
 														<td>
-															<a href="#"
-																>laptop</a
-															>
+															<a href="#">laptop</a>
 														</td>
 														<td>$35.99</td>
 														<td>
-															<img
-																src="img/products/laptop1.jpg"
-																alt=""
-															/>
+															<img src="img/products/laptop1.jpg" alt="" />
 														</td>
 													</tr>
 													<tr>
 														<th scope="row">2</th>
 														<td>Вова</td>
 														<td>
-															<a href="#"
-																>laptop</a
-															>
+															<a href="#">laptop</a>
 														</td>
 														<td>$25.99</td>
 														<td>
-															<img
-																src="img/products/laptop1.jpg"
-																alt=""
-															/>
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">3</th>
-														<td>Скуф</td>
-														<td>
-															<a href="#"
-																>laptop</a
-															>
-														</td>
-														<td>$325.99</td>
-														<td>
-															<img
-																src="img/products/laptop1.jpg"
-																alt=""
-															/>
+															<img src="img/products/laptop1.jpg" alt="" />
 														</td>
 													</tr>
 												</tbody>
@@ -324,19 +171,8 @@
 
 										<!-- кнопки ниже закрыть и принять -->
 										<div class="modal-footer">
-											<button
-												type="button"
-												class="btn btn-danger"
-												data-bs-dismiss="modal"
-											>
-												Очистить корзину
-											</button>
-											<button
-												type="button"
-												class="btn btn-success"
-											>
-												Оплатить покупку
-											</button>
+											<button type="button" class="btn btn-danger" id="clearCartBtn">Очистить корзину</button>
+											<button type="button" class="btn btn-success">Оплатить покупку</button>
 										</div>
 									</div>
 								</div>
@@ -346,15 +182,8 @@
 
 					<!-- Поиск search справа -->
 					<form class="d-flex" role="search">
-						<input
-							class="form-control me-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search"
-						/>
-						<button class="btn btn-outline-success" type="submit">
-							Search
-						</button>
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-outline-success" type="submit">Search</button>
 					</form>
 				</div>
 			</div>
@@ -362,57 +191,23 @@
 
 		<!-- Карусель (слайды) -->
 		<div class="container-fluid my-carousel">
-			<div
-				id="carouselExampleIndicators"
-				class="carousel slide carousel-fade"
-				data-bs-ride="carousel"
-				data-bs-interval="5000"
-			>
+			<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 				<!-- индикаторы карусели -->
 				<div class="carousel-indicators">
-					<button
-						type="button"
-						data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="0"
-						class="active"
-						aria-current="true"
-						aria-label="Slide 1"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="1"
-						aria-label="Slide 2"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#carouselExampleIndicators"
-						data-bs-slide-to="2"
-						aria-label="Slide 3"
-					></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				<!-- фотки карусели -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img
-							src="img/IgorVoitenko/1.jpg"
-							class="d-block w-100"
-							alt="..."
-						/>
+						<img src="img/IgorVoitenko/1.jpg" class="d-block w-100" alt="..." />
 					</div>
 					<div class="carousel-item">
-						<img
-							src="img/IgorVoitenko/2.jpg"
-							class="d-block w-100"
-							alt="..."
-						/>
+						<img src="img/IgorVoitenko/2.jpg" class="d-block w-100" alt="..." />
 					</div>
 					<div class="carousel-item">
-						<img
-							src="img/IgorVoitenko/3.jpg"
-							class="d-block w-100"
-							alt="..."
-						/>
+						<img src="img/IgorVoitenko/3.jpg" class="d-block w-100" alt="..." />
 					</div>
 					<!-- <div class="carousel-item">
 					<img
@@ -423,29 +218,13 @@
 				</div> -->
 				</div>
 				<!-- кнопка "предыдущий" -->
-				<button
-					class="carousel-control-prev"
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev"
-				>
-					<span
-						class="carousel-control-prev-icon"
-						aria-hidden="true"
-					></span>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<!-- кнопка "следующий" -->
-				<button
-					class="carousel-control-next"
-					type="button"
-					data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next"
-				>
-					<span
-						class="carousel-control-next-icon"
-						aria-hidden="true"
-					></span>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
@@ -460,39 +239,22 @@
 					<div class="col-lg-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-thumb">
-								<a href="#"
-									><img src="img/products/laptop1.jpg" alt=""
-								/></a>
+								<a href="#"><img src="img/products/laptop1.jpg" alt="" /></a>
 							</div>
 
 							<div class="product-details">
 								<h4><a href="#">Ноутбук1</a></h4>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Soluta, unde?
-								</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
 
-								<div
-									class="product-bottom-details d-flex justify-content-between"
-								>
-									<div class="product-price">
-										<small>$230.99</small> $99
-									</div>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price"><small>$230.99</small> $99</div>
 
 									<div class="product-links">
 										<button class="add-to-cart-btn">
-											<i
-												class="fa-solid fa-cart-arrow-down"
-												data-product-id="1"
-											></i>
+											<i class="fa-solid fa-cart-arrow-down" data-product-id="1"></i>
 										</button>
 
-										<a href="#"
-											><i
-												class="fa-sharp fa-solid fa-heart"
-												style="color: #db3d5d"
-											></i
-										></a>
+										<a href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #db3d5d"></i></a>
 									</div>
 								</div>
 							</div>
@@ -502,38 +264,21 @@
 					<div class="col-lg-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-thumb">
-								<a href="#"
-									><img src="img/products/laptop1.jpg" alt=""
-								/></a>
+								<a href="#"><img src="img/products/laptop1.jpg" alt="" /></a>
 							</div>
 
 							<div class="product-details">
-								<h4><a href="#">Ноутбук1</a></h4>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Soluta, unde?
-								</p>
+								<h4><a href="#">Ноутбук2</a></h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
 
-								<div
-									class="product-bottom-details d-flex justify-content-between"
-								>
-									<div class="product-price">
-										<small>$230.99</small> $99
-									</div>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price"><small>$230.99</small> $99</div>
 
 									<div class="product-links">
 										<button class="add-to-cart-btn">
-											<i
-												class="fa-solid fa-cart-arrow-down"
-												data-product-id="2"
-											></i>
+											<i class="fa-solid fa-cart-arrow-down" data-product-id="2"></i>
 										</button>
-										<a href="#"
-											><i
-												class="fa-sharp fa-solid fa-heart"
-												style="color: #db3d5d"
-											></i
-										></a>
+										<a href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #db3d5d"></i></a>
 									</div>
 								</div>
 							</div>
@@ -543,38 +288,21 @@
 					<div class="col-lg-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-thumb">
-								<a href="#"
-									><img src="img/products/laptop1.jpg" alt=""
-								/></a>
+								<a href="#"><img src="img/products/laptop1.jpg" alt="" /></a>
 							</div>
 
 							<div class="product-details">
-								<h4><a href="#">Ноутбук1</a></h4>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Soluta, unde?
-								</p>
+								<h4><a href="#">Ноутбук3</a></h4>
+								<p>Описание какоето</p>
 
-								<div
-									class="product-bottom-details d-flex justify-content-between"
-								>
-									<div class="product-price">
-										<small>$230.99</small> $99
-									</div>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price"><small>$230.99</small> $99</div>
 
 									<div class="product-links">
 										<button class="add-to-cart-btn">
-											<i
-												class="fa-solid fa-cart-arrow-down"
-												data-product-id="3"
-											></i>
+											<i class="fa-solid fa-cart-arrow-down" data-product-id="3"></i>
 										</button>
-										<a href="#"
-											><i
-												class="fa-sharp fa-solid fa-heart"
-												style="color: #db3d5d"
-											></i
-										></a>
+										<a href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #db3d5d"></i></a>
 									</div>
 								</div>
 							</div>
@@ -584,38 +312,21 @@
 					<div class="col-lg-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-thumb">
-								<a href="#"
-									><img src="img/products/laptop1.jpg" alt=""
-								/></a>
+								<a href="#"><img src="img/products/laptop1.jpg" alt="" /></a>
 							</div>
 
 							<div class="product-details">
-								<h4><a href="#">Ноутбук1</a></h4>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Soluta, unde?
-								</p>
+								<h4><a href="#">Ноутбук4</a></h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
 
-								<div
-									class="product-bottom-details d-flex justify-content-between"
-								>
-									<div class="product-price">
-										<small>$230.99</small> $99
-									</div>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price"><small>$230.99</small> $99</div>
 
 									<div class="product-links">
 										<button class="add-to-cart-btn">
-											<i
-												class="fa-solid fa-cart-arrow-down"
-												data-product-id="4"
-											></i>
+											<i class="fa-solid fa-cart-arrow-down" data-product-id="4"></i>
 										</button>
-										<a href="#"
-											><i
-												class="fa-sharp fa-solid fa-heart"
-												style="color: #db3d5d"
-											></i
-										></a>
+										<a href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #db3d5d"></i></a>
 									</div>
 								</div>
 							</div>
@@ -625,38 +336,21 @@
 					<div class="col-lg-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-thumb">
-								<a href="#"
-									><img src="img/products/laptop1.jpg" alt=""
-								/></a>
+								<a href="#"><img src="img/products/laptop1.jpg" alt="" /></a>
 							</div>
 
 							<div class="product-details">
-								<h4><a href="#">Ноутбук1</a></h4>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Soluta, unde?
-								</p>
+								<h4><a href="#">Ноутбук5</a></h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
 
-								<div
-									class="product-bottom-details d-flex justify-content-between"
-								>
-									<div class="product-price">
-										<small>$230.99</small> $99
-									</div>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price"><small>$230.99</small> $99</div>
 
 									<div class="product-links">
 										<button class="add-to-cart-btn">
-											<i
-												class="fa-solid fa-cart-arrow-down"
-												data-product-id="5"
-											></i>
+											<i class="fa-solid fa-cart-arrow-down" data-product-id="5"></i>
 										</button>
-										<a href="#"
-											><i
-												class="fa-sharp fa-solid fa-heart"
-												style="color: #db3d5d"
-											></i
-										></a>
+										<a href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #db3d5d"></i></a>
 									</div>
 								</div>
 							</div>
@@ -666,38 +360,22 @@
 					<div class="col-lg-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-thumb">
-								<a href="#"
-									><img src="img/products/laptop1.jpg" alt=""
-								/></a>
+								<a href="#"><img src="img/products/laptop1.jpg" alt="" /></a>
 							</div>
 
 							<div class="product-details">
-								<h4><a href="#">Ноутбук1</a></h4>
-								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Soluta, unde?
-								</p>
+								<h4><a href="#">Ноутбук6</a></h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
 
-								<div
-									class="product-bottom-details d-flex justify-content-between"
-								>
-									<div class="product-price">
-										<small>$230.99</small> $99
-									</div>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price"><small>$230.99</small> $99</div>
 
 									<div class="product-links">
 										<button class="add-to-cart-btn">
-											<i
-												class="fa-solid fa-cart-arrow-down"
-												data-product-id="6"
-											></i>
+											//
+											<i class="fa-solid fa-cart-arrow-down" data-product-id="6"></i>
 										</button>
-										<a href="#"
-											><i
-												class="fa-sharp fa-solid fa-heart"
-												style="color: #db3d5d"
-											></i
-										></a>
+										<a href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #db3d5d"></i></a>
 									</div>
 								</div>
 							</div>
@@ -708,35 +386,66 @@
 		</section>
 
 		<!-- JavaScript код для обработки нажатия на кнопку "добавить в корзину" -->
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const addToCartButtons =
-					document.querySelectorAll('.add-to-cart-btn')
+			$(document).ready(function () {
+				var cartItemCount = 2 // Изначальное количество товаров в корзине
 
-				addToCartButtons.forEach(button => {
-					button.addEventListener('click', function () {
-						// Получаем информацию о товаре, который нужно добавить в корзину
-						const product = this.parentNode
-						const productName =
-							product.querySelector('h3').innerText
-						const productPrice = 'Цена' // Здесь нужно указать цену товара
+				// Обработчик события нажатия на кнопку добавления в корзину
+				$('.add-to-cart-btn').click(function () {
+					alert('Нажата кнопка!')
+					// Получаем информацию о товаре из карточки
+					var productName = $(this).closest('.product-card').find('h4 a').text()
+					var priceText = $('.product-price').text() // Получаем текст из элемента
+					var prices = priceText.trim().split(' ') // Разбиваем текст по пробелу
+					var lastPrice = prices[prices.length - 1] // Берем последний элемент массива
+					// Добавляем товар в корзину в модальном окне
+					addToCartModal(productName, lastPrice)
 
-						// Создаем HTML элемент для добавления в таблицу корзины
-						const newRow = document.createElement('tr')
-						newRow.innerHTML = `
-                    <td>№</td>
-                    <td>Продавец</td>
-                    <td>${productName}</td>
-                    <td>${productPrice}</td>
-                    <td>Изображение</td>
-                `
+					// Увеличиваем количество товаров на 1 и обновляем счетчик на странице
+					cartItemCount++
+					$('#cart-item-count').text(cartItemCount)
+				})
 
-						// Добавляем новую строку в таблицу корзины
-						const cartTableBody = document.querySelector(
-							'.modal-body table tbody'
-						)
-						cartTableBody.appendChild(newRow)
-					})
+				// Обработчик события нажатия на кнопку удаления товара из корзины
+				$('#clearCartBtn').click(function () {
+					// Устанавливаем количество товаров в корзине в 0 и обновляем счетчик на странице
+					cartItemCount = 0
+					$('#cart-item-count').text(cartItemCount)
+					// Очищаем таблицу корзины
+					$('#modal-cart .modal-body table tbody').empty()
+				})
+
+				// Функция добавления товара в корзину в модальном окне
+				function addToCartModal(productName, lastPrice) {
+					// Создаем новую строку для таблицы
+					var newRow =
+						'<tr>' +
+						'<td>' +
+						(cartItemCount + 1) +
+						'</td>' + // Номер товара, вы можете изменить это в соответствии с вашей логикой
+						'<td>Продавец</td>' + // Продавец, вы можете изменить это в соответствии с вашей логикой
+						'<td>' +
+						productName +
+						'</td>' + // Название товара
+						'<td>' +
+						lastPrice +
+						'</td>' +
+						'</tr>'
+
+					// Добавляем новую строку в тело таблицы корзины в модальном окне
+					$('#modal-cart .modal-body table').append(newRow)
+				}
+			})
+		</script>
+		//Код для удаления элементов из корзины
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('#clearCartBtn').click(function () {
+					// Удаление всех строк из тела таблицы
+					$('.table').empty()
 				})
 			})
 		</script>
@@ -769,14 +478,10 @@
 							<h4>Контакты</h4>
 							<ul class="list-unstyled">
 								<li>
-									<a href="tel:+79432532125"
-										>+7 943 253-21-25</a
-									>
+									<a href="tel:+79432532125">+7 943 253-21-25</a>
 								</li>
 								<li>
-									<a href="tel:+79432232125"
-										>+7 925 253-26-15</a
-									>
+									<a href="tel:+79432232125">+7 925 253-26-15</a>
 								</li>
 							</ul>
 						</div>
@@ -785,18 +490,8 @@
 							<h4>Мы в сети:</h4>
 							<div class="footer-icons">
 								<a href="#"><i class="fa-brands fa-vk"></i></a>
-								<a href="#"
-									><i
-										class="fa-brands fa-telegram"
-										style="color: #74c0fc"
-									></i
-								></a>
-								<a href="#"
-									><i
-										class="fa-brands fa-youtube"
-										style="color: #e3301c"
-									></i
-								></a>
+								<a href="#"><i class="fa-brands fa-telegram" style="color: #74c0fc"></i></a>
+								<a href="#"><i class="fa-brands fa-youtube" style="color: #e3301c"></i></a>
 							</div>
 						</div>
 					</div>
@@ -805,15 +500,8 @@
 		</footer>
 
 		<!-- Скрипты -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-		<script
-			src="https://kit.fontawesome.com/ec796c5424.js"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://kit.fontawesome.com/ec796c5424.js" crossorigin="anonymous"></script>
 	</body>
 </html>
