@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #fff;
+text-decoration: none;
+}
+
+p a {
+color: #fff;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #fff;
+text-decoration: none;
+}
+
+p a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #fff;
+}
+
+.awesome {
+color: #fff;
+}
+
+.submit:after {
+background: #fff;
+}
+
+#form .error {
+color: #fff;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #fff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #fff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #fff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #fff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #fff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #fff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #fff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #fff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #fff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #fff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #fff;
+border: 1px solid #fff;
+}
+
+ul#countdown li span {
+color: #fff;
+}
+
+ul#countdown li span.seconds {
+color: #fff;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #fff;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #fff;
+}
+
+.expand { 
+background: #fff;
+}
+
+.options-head {
+color: #000;
+background: #fefefe;
+}

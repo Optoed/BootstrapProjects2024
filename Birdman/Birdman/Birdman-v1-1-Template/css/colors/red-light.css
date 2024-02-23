@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #bb141a;
+text-decoration: none;
+}
+
+p a {
+color: #bb141a;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #bb141a;
+text-decoration: none;
+}
+
+p a:hover {
+color: #000;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #bb141a;
+}
+
+.awesome {
+color: #bb141a;
+}
+
+.submit:after {
+background: #bb141a;
+}
+
+#form .error {
+color: #bb141a;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #bb141a;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+		}	
+    100% {
+		border-color: #bb141a;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+		}
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #bb141a;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #bb141a;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #bb141a;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #bb141a;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #bb141a;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #bb141a;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #bb141a;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #bb141a;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #000;
+border: 1px solid #000;
+}
+
+ul#countdown li span {
+color: #bb141a;
+}
+
+ul#countdown li span.seconds {
+color: #bb141a;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #bb141a;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #bb141a;
+}
+
+.expand { 
+background: #bb141a;
+}
+
+.options-head {
+background: #bb141a;
+}

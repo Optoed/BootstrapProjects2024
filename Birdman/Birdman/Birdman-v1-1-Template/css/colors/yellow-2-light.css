@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #ffc200;
+text-decoration: none;
+}
+
+p a {
+color: #ffc200;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #ffc200;
+text-decoration: none;
+}
+
+p a:hover {
+color: #ffc200;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #ffc200;
+}
+
+.awesome {
+color: #ffc200;
+}
+
+.submit:after {
+background: #ffc200;
+}
+
+#form .error {
+color: #ffc200;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+		}	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+		}
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #ffc200;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ffc200;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #ffc200;
+border: 1px solid #ffc200;
+}
+
+ul#countdown li span {
+color: #ffc200;
+}
+
+ul#countdown li span.seconds {
+color: #ffc200;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #ffc200;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #ffc200;
+}
+
+.expand { 
+background: #ffc200;
+}
+
+.options-head {
+background: #ffc200;
+}

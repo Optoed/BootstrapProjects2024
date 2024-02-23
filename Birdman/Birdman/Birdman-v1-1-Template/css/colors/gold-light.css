@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #996600;
+text-decoration: none;
+}
+
+p a {
+color: #996600;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #996600;
+text-decoration: none;
+}
+
+p a:hover {
+color: #996600;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #996600;
+}
+
+.awesome {
+color: #996600;
+}
+
+.submit:after {
+background: #996600;
+}
+
+#form .error {
+color: #996600;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #996600;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+		}	
+    100% {
+		border-color: #996600;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+		}
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #996600;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #996600;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #996600;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #996600;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #996600;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #996600;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #996600;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #996600;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #996600;
+border: 1px solid #996600;
+}
+
+ul#countdown li span {
+color: #996600;
+}
+
+ul#countdown li span.seconds {
+color: #996600;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #996600;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #996600;
+}
+
+.expand { 
+background: #996600;
+}
+
+.options-head {
+background: #996600;
+}
