@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#customizer {
+	position: fixed;
+	top: 10%;
+	z-index: 999999;
+}
+
+.corner {
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	background: #fff url(../styleswitch/corner.png);
+	position: absolute;
+	top: 50px;
+	right: -50px;
+}
+
+.s-close {
+	left: -206px !important;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.s-open {
+	left: 0 !important;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.corner.expanded {
+	background: #fff url(../styleswitch/corner.png);
+}
+
+#options {
+	width: 206px;
+	/* height: 310px; */
+	height: 260px;
+	background: #fff;
+	padding: 0;
+	position: relative;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.options-head {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #bb141a;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+.options-segment {
+	margin-bottom: 20px;
+}
+
+.color-head {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+	color: #000;
+	line-height: 1;
+	/* new */
+	display: none;
+	visibility: hidden;
+}
+
+.color-scheme {
+	/* padding: 46px 0 0 1px; */
+	padding: 10px 0 0 1px;
+}
+
+.color-scheme li {
+	float: left;
+	list-style: none;
+}
+
+.color-scheme a {
+	display: block;
+	height: 30px;
+	width: 30px;
+	margin: 0 4.25px 10px;
+}
+
+.colors-sel {
+	padding: 20px 25px 15px;
+	margin-bottom: 0;
+}
+
+.black a {
+	background: #000;
+}
+
+.white a {
+	background: #fff;
+	border: 1px solid #000;
+}
+
+.red a {
+	background: #bb141a;
+}
+
+.red-2 a {
+	background: #ff0000;
+}
+
+.green a {
+	background: #00cc66;
+}
+
+.green-2 a {
+	background: #009966;
+}
+
+.blue a {
+	background: #00bfff;
+}
+
+.blue-2 a {
+	background: #0099ff;
+}
+
+.yellow a {
+	background: #ead22d;
+}
+
+.yellow-2 a {
+	background: #ffc200;
+}
+
+.orange a {
+	background: #ff6900;
+}
+
+.gold a {
+	background: #996600;
+}
+
+.pink a {
+    background: #ff3e91;
+}
+
+.purple a {
+	background: #9b59b6;
+}
+
+.violet a {
+	background: #7369b9;
+}
+
+.turquoise a {
+	background: #34c5ba;
+}
+
+.brick a {
+	background: #ff9966;
+}
+
+.silver a {
+	background: #555;
+}

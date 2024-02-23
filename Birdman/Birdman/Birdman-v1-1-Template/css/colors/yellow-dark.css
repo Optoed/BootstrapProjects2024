@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #ead22d;
+text-decoration: none;
+}
+
+p a {
+color: #ead22d;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #ead22d;
+text-decoration: none;
+}
+
+p a:hover {
+color: #ead22d;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #ead22d;
+}
+
+.awesome {
+color: #ead22d;
+}
+
+.submit:after {
+background: #ead22d;
+}
+
+#form .error {
+color: #ead22d;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #ead22d;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #ead22d;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #ead22d;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #ead22d;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #ead22d;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #ead22d;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #ead22d;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #ead22d;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #ead22d;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #ead22d;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #ead22d;
+border: 1px solid #ead22d;
+}
+
+ul#countdown li span {
+color: #ead22d;
+}
+
+ul#countdown li span.seconds {
+color: #ead22d;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #ead22d;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #ead22d;
+}
+
+.expand { 
+background: #ead22d;
+}
+
+.options-head {
+background: #ead22d;
+}

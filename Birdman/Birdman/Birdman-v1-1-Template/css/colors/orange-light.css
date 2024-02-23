@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #ff6900;
+text-decoration: none;
+}
+
+p a {
+color: #ff6900;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #ff6900;
+text-decoration: none;
+}
+
+p a:hover {
+color: #ff6900;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #ff6900;
+}
+
+.awesome {
+color: #ff6900;
+}
+
+.submit:after {
+background: #ff6900;
+}
+
+#form .error {
+color: #ff6900;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #ff6900;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+		}	
+    100% {
+		border-color: #ff6900;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+		}
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #ff6900;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ff6900;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #ff6900;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ff6900;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #ff6900;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ff6900;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #ff6900;
+		box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 5px rgba(0,0,0,0.1)
+    }	
+    100% {
+		border-color: #ff6900;
+		box-shadow: 0 0 20px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #ff6900;
+border: 1px solid #ff6900;
+}
+
+ul#countdown li span {
+color: #ff6900;
+}
+
+ul#countdown li span.seconds {
+color: #ff6900;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #ff6900;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #ff6900;
+}
+
+.expand { 
+background: #ff6900;
+}
+
+.options-head {
+background: #ff6900;
+}

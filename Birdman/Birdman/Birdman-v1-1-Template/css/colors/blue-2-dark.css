@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+color: #0099ff;
+text-decoration: none;
+}
+
+p a {
+color: #0099ff;
+text-decoration: none;
+}
+
+p a:visited, p a:active {
+color: #0099ff;
+text-decoration: none;
+}
+
+p a:hover {
+color: #0099ff;
+text-decoration: none;
+}
+
+h1, h2 {
+color: #0099ff;
+}
+
+.awesome {
+color: #0099ff;
+}
+
+.submit:after {
+background: #0099ff;
+}
+
+#form .error {
+color: #0099ff;
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #0099ff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #0099ff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #0099ff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #0099ff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #0099ff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #0099ff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #0099ff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #0099ff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #0099ff;
+		box-shadow: 0 0 5px rgba(255,255,255,0.2), inset 0 0 5px rgba(255,255,255,0.1)
+    }	
+    100% {
+		border-color: #0099ff;
+		box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 10px rgba(255,255,255,0.4)
+    }
+}
+
+
+#subscribe input#submit {
+background: #0099ff;
+border: 1px solid #0099ff;
+}
+
+ul#countdown li span {
+color: #0099ff;
+}
+
+ul#countdown li span.seconds {
+color: #0099ff;
+}
+
+.hi-icon-effect-8 .hi-icon {
+color: #0099ff;
+}
+
+.no-touch .hi-icon-effect-8 .hi-icon:hover {
+color: #0099ff;
+}
+
+.expand { 
+background: #0099ff;
+}
+
+.options-head {
+background: #0099ff;
+}
