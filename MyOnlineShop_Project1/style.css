@@ -1,189 +1,192 @@
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	color: #000;
-	background-color: #fff;
-	min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  min-width: 320px;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 section {
-	padding: 50px 0;
+  padding: 50px 0;
 }
 
 a {
-	color: #111;
+  color: #111;
 }
 
 a:hover {
-	color: #555;
+  color: #555;
 }
 
 /******* Header *******/
 .navbar-nav {
-	color: #111;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.navbar-nav .dropdown-menu {
-	right: 0;
-	left: auto;
+  color: #111;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .top-menu li a::after {
-	content: '';
-	display: block;
-	width: 100%;
-	background-color: #111;
-	height: 1px;
-	transition: all 0.3s;
-	transform: scale(0);
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #111;
+  height: 1px;
+  transition: all 0.3s;
+  transform: scale(0);
 }
 
 .top-menu li a:hover::after {
-	transform: scale(1);
+  transform: scale(1);
 }
 
-/* Уменьшаем жирность подчеркивания для ссылки "Ты можешь" */
-.top-menu li a.nav-link.dropdown-toggle.special::after {
-	height: 0.5px; /* Пример уменьшения толщины */
-	/* Другие стили, если необходимо */
+.top-menu li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #111;
+  height: 1px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+  transform: scale(1);
 }
 
 /*** MODAL ****/
 .modal-body img {
-	max-width: 100px;
+  max-width: 100px;
 }
 
 /******* Main-Content *******/
 /* carousel */
 .my-carousel {
-	padding: 0;
+  padding: 0;
 }
 
 .my-carousel .carousel-item {
-	max-height: 500px;
-	/* можешь поиграться с этим параметром */
-	display: flex;
+  max-height: 700px;
+  /* можешь поиграться с этим параметром */
+  /*display: flex;*/
 }
 
 .my-carousel .carousel-item img {
-	object-fit: cover;
+  object-fit: cover;
 }
 
 /* product-card */
 .product-card {
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
-	transition: all 0.03s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.03s;
 }
 
 .product-card:hover {
-	box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
 
 .product-thumb a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 200px;
-	padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 20px;
 }
 
 .product-thumb img {
-	max-width: 100%;
-	max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .product-details {
-	padding: 20px;
+  padding: 20px;
 }
 
 .product-details h4 a {
-	font-weight: 600;
-	display: block;
-	height: 60px;
-	overflow: hidden;
-	text-decoration: none;
+  font-weight: 600;
+  display: block;
+  height: 60px;
+  overflow: hidden;
+  text-decoration: none;
 }
 
 .product-details p {
-	font-size: 15px;
-	margin-bottom: 20px;
-	color: #999;
-	height: 44px;
-	overflow: hidden;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #999;
+  height: 44px;
+  overflow: hidden;
 }
 
 .product-bottom-details {
-	overflow: hidden;
-	border-top: 1px solid #eee;
-	padding-top: 20px;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
 }
 
 .product-price {
-	font-size: 18px;
-	color: #ee6e73;
-	font-weight: 600;
+  font-size: 18px;
+  color: #ee6e73;
+  font-weight: 600;
 }
 
 .product-price small {
-	color: #ccc;
-	font-weight: 400;
-	text-decoration: line-through;
-	margin-right: 5px;
+  color: #ccc;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 5px;
 }
 
 .product-links a {
-	font-style: 20px;
-	margin-left: 10px;
+  font-style: 20px;
+  margin-left: 10px;
 }
 
 /************ FOOTER ************/
 
 .footer {
-	background-color: #343434;
+  background-color: #343434;
 }
 
 .footer h4 {
-	color: #ccc;
-	text-transform: uppercase;
-	font-style: 16px;
-	border-bottom: 1px solid #666;
-	padding-bottom: 3px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-style: 16px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 3px;
 }
 
 .footer a {
-	text-decoration: none;
-	transition: all 0.3s;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 .footer a:hover {
-	color: #fff;
-	text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .footer a,
 .footer li {
-	color: #c8c8c8;
+  color: #c8c8c8;
 }
 
 .footer li a {
-	/* чтобы вся область была кликабельной */
-	display: block;
+  /* чтобы вся область была кликабельной */
+  display: block;
 }
 
 .footer-icons a {
-	display: inline-block;
-	margin-right: 15px;
-	font-size: 20px;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
 }
